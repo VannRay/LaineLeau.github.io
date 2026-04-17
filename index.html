@@ -1,5 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
+  
+  <header class="hero">
+  <img src="header.jpg" alt="L'art de Laine L'eau" class="hero-img">
+  <h1>L’art de Laine L’eau</h1>
+  <div class="subtitle">The Way of Wool & Water</div>
+     <style>
+  header {
+  padding: 120px 20px;
+  text-align: center;
+  color: white;
+  background-image: url('header.jpg');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+header::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0,0,0,0.35);
+}
+</style>
+</header>
+ 
+header h1,
+header .subtitle {
+  position: relative;
+  z-index: 2;
+}
 <head>
   <meta charset="UTF-8">
   <title>L’art de Laine L’eau</title>
