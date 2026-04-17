@@ -1,35 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-  
-  <header class="hero">
-  <img src="header.jpg" alt="L'art de Laine L'eau" class="hero-img">
-  <h1>L’art de Laine L’eau</h1>
-  <div class="subtitle">The Way of Wool & Water</div>
-     <style>
-  header {
-  padding: 120px 20px;
-  text-align: center;
-  color: white;
-  background-image: url('header.jpg');
-  background-size: cover;
-  background-position: center;
-  position: relative;
-}
-
-header::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(0,0,0,0.35);
-}
-</style>
-</header>
- 
-header h1,
-header .subtitle {
-  position: relative;
-  z-index: 2;
-}
 <head>
   <meta charset="UTF-8">
   <title>L’art de Laine L’eau</title>
@@ -49,7 +19,6 @@ header .subtitle {
       color: var(--ink);
       line-height: 1.7;
 
-      /* soft linen / paper feel */
       background-color: #f6f3ed;
       background-image:
         radial-gradient(rgba(0,0,0,0.03) 1px, transparent 1px),
@@ -58,9 +27,17 @@ header .subtitle {
       background-position: 0 0, 10px 10px;
     }
 
+    /* HEADER */
     header {
       text-align: center;
       padding: 70px 20px 40px;
+      position: relative;
+    }
+
+    header h1,
+    header .subtitle {
+      position: relative;
+      z-index: 2;
     }
 
     h1 {
@@ -94,7 +71,6 @@ header .subtitle {
       margin: 0 5px;
       cursor: pointer;
       border-radius: 20px;
-      font-size: 0.9rem;
     }
 
     .section {
@@ -104,7 +80,6 @@ header .subtitle {
     h2 {
       color: var(--accent);
       font-weight: normal;
-      margin-bottom: 15px;
     }
 
     .card {
@@ -113,7 +88,6 @@ header .subtitle {
       border-radius: 12px;
       margin-bottom: 15px;
       box-shadow: 0 2px 10px rgba(0,0,0,0.04);
-      backdrop-filter: blur(2px);
     }
 
     .muted {
@@ -136,15 +110,12 @@ header .subtitle {
       background: var(--accent);
       color: white;
       text-decoration: none;
-      margin-top: 10px;
-      font-size: 1rem;
     }
 
     footer {
       text-align: center;
       color: var(--muted);
       padding: 40px 20px;
-      font-size: 0.9rem;
     }
   </style>
 </head>
@@ -163,9 +134,8 @@ header .subtitle {
 
 <div class="container">
 
-  <!-- ENGLISH -->
+  <!-- EN -->
   <div id="en">
-
     <div class="section">
       <h2>Practice</h2>
       <p class="muted">
@@ -176,78 +146,53 @@ header .subtitle {
 
     <div class="section">
       <h2>Services</h2>
-
-      <div class="card">
-        <strong>Natural Product Sourcing</strong>
-        <p class="muted">$40 / hour · Canadian-made natural products for home and textiles.</p>
-      </div>
-
-      <div class="card">
-        <strong>Green Cleaning</strong>
-        <p class="muted">$75 / hour · Non-toxic, ecology-based cleaning practice.</p>
-      </div>
+      <div class="card"><strong>Natural Product Sourcing</strong> <br>$40 / hour</div>
+      <div class="card"><strong>Green Cleaning</strong> <br>$75 / hour</div>
     </div>
 
     <div class="section">
       <h2>Ateliers</h2>
-
       <div class="card">Wool Tapestry</div>
       <div class="card">Kitchen Dyeing</div>
-      <div class="card">Hand Spindle Spinning</div>
-      <div class="card">Wheel Spinning</div>
+      <div class="card">Spinning (Spindle & Wheel)</div>
     </div>
 
     <div class="booking">
       <h2>Book a Session</h2>
-      <p class="muted">One-on-one work based on your needs and budget. Sliding scale and Group Options Available</p>
-      <a class="btn" href="https://calendly.com/laine-leau/atelier-inquiry">
-        Atelier Booking Request
+      <a class="btn" href="https://calendly.com/laine-leau/atelier-inquiry" target="_blank">
+        Booking Request
       </a>
     </div>
-
   </div>
 
-  <!-- FRENCH -->
+  <!-- FR -->
   <div id="fr" class="hidden">
-
     <div class="section">
       <h2>Pratique</h2>
       <p class="muted">
-        La santé est façonnée par notre environnement : ce que nous portons,
-        ce que nous utilisons pour nettoyer, et les matériaux qui nous entourent.
+        La santé est façonnée par notre environnement...
       </p>
     </div>
 
     <div class="section">
       <h2>Services</h2>
-
-      <div class="card">
-        <strong>Recherche de produits naturels</strong>
-        <p class="muted">$40 / heure · Produits canadiens naturels pour la maison et les textiles.</p>
-      </div>
-
-      <div class="card">
-        <strong>Nettoyage écologique</strong>
-        <p class="muted">$75 / heure · Pratique de nettoyage non toxique et consciente.</p>
-      </div>
+      <div class="card">Recherche de produits naturels — $40 / heure</div>
+      <div class="card">Nettoyage écologique — $75 / heure</div>
     </div>
 
     <div class="section">
       <h2>Ateliers</h2>
-
-      <div class="card">Tapisseries de laine</div>
-      <div class="card">Vêtements en fibres naturelles & teintures maison</div>
-      <div class="card">Filage au fuseau et à la roue</div>
-      </div>
-
-    <div class="booking">
-      <h2>Réserver une séance</h2>
-      <p class="muted">Travail individuel selon vos besoins et votre budget. Tarification flexible et groupes.</p>
-      <a class="btn" href="https://calendly.com/laine-leau/atelier-consultation-reservation">
-        Atelier consultation réservation 
-      </a>
+      <div class="card">Tapisserie de laine</div>
+      <div class="card">Teinture naturelle</div>
+      <div class="card">Filage manuel</div>
     </div>
 
+    <div class="booking">
+      <h2>Réserver</h2>
+      <a class="btn" href="https://calendly.com/laine-leau/atelier-consultation-reservation" target="_blank">
+        Demande de réservation
+      </a>
+    </div>
   </div>
 
 </div>
